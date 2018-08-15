@@ -1,2 +1,2 @@
-# graphPOPLIkelihood
+# graphPOPLikelihood
 Likelihood function for environemental demogenetics
