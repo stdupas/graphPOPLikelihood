@@ -1,2 +1,2 @@
 # graphPOPLikelihood
-Likelihood function for environemental demogenetics
+S4 R library calculating likelihood for environemental demogenetics inference
