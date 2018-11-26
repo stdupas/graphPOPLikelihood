@@ -381,7 +381,10 @@ setMethod(
   }
 )
 
-
+setMethod(f="mutationMatrix",
+          signature="rasterlayer",
+          definition = function(object,shapeMut,pMut){}
+          )
 
 
 setMethod(

@@ -9,7 +9,7 @@
 wd="/M1bi 2015 2016/stage/busseola/"
 
 wd="~/Documents/Lauriane/busseola/"
-
+wd="/home/dupas/graphPOPLikelihood"
 #  wd="/home/dupas/busseola"
 
 # wd= "~/busseola/"
@@ -33,7 +33,7 @@ Prior$K$busseola$model = data.frame(busseola="proportional")
 Prior$K$busseola$a$p = data.frame(busseola=c(min=0.001,max=0.5))
 Prior$R$busseola$a$distribution = "fixed"
 Prior$R$busseola$model =data.frame(busseola="constant")
-Prior$R$busseola$a$p = 20
+Prior$R$busseola$a$p = 1
 Prior$mutation_rate$busseola$model =data.frame(busseola= "stepwise")
 Prior$mutation_rate$busseola$a$distribution = "loguniform"
 Prior$mutation_rate$busseola$a$p =data.frame(busseola=c(min=1E-6,max=1E-2))
@@ -44,15 +44,17 @@ Prior$K$busseola$model =c("proportional")
 Prior$K$busseola$a$p = data.frame(busseola=c(min=0.001,max=0.5))
 Prior$R$busseola$a$distribution = "fixed"
 Prior$R$busseola$model =c("constant")
-Prior$R$busseola$a$p = 20
+Prior$R$busseola$a$p = 1
 Prior$mutation_rate$busseola$model =data.frame(busseola= "stepwise")
 Prior$mutation_rate$busseola$a$distribution = "loguniform"
 Prior$mutation_rate$busseola$a$p =data.frame(busseola=c(min=1E-6,max=1E-2))
 
 Prior$dispersion$busseola$model="contiguous"
 Prior$dispersion$busseola$model=data.frame(busseola="contiguous")
+Prior$K$busseola$model =c("proportional")
+Prior$K$busseola$a$p = data.frame(busseola=c(min=0.001,max=0.5))
 Prior$R$busseola$model = c("constant")
-Prior$R$busseola$a$p = 20
+Prior$R$busseola$a$p = 1
 Prior$mutation_rate$busseola$model =c("stepwise")
 Prior$mutation_rate$busseola$a$distribution = "loguniform"
 Prior$mutation_rate$busseola$a$p =data.frame(busseola=c(min=1E-6,max=1E-2))
@@ -111,6 +113,7 @@ spgen <- new("spatialGenetic",gen,x=genotypes[,"x"],y=genotypes[,"y"],Cell_numbe
 Parameters <- sampleP(Prior)
 transition=transitionMatrixA(object1 = populations,object2 = Parameters)
 #demeTrans <- new("demeTransition",populations,transition=transition)
+mutRate=Parameters$mutation_rate$busseola$p
 allelicTransition <- matrix(c(1-mutRate,mutRate,mutRate,1-mutRate),nrow=2)
 dimnames(allelicTransition) <- list(c(120,122),c(120,122))
 
