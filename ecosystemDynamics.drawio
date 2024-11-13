@@ -127,8 +127,8 @@
             <mxPoint x="594.2" y="210.39" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="W582OLzANp079AzozXXy-38" value="H" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="210" y="210" width="30" height="30" as="geometry" />
+        <mxCell id="W582OLzANp079AzozXXy-38" value="&lt;div&gt;H : ecosystem history&lt;/div&gt;&lt;div&gt;S : sample history&lt;/div&gt;&lt;div&gt;M&lt;sub&gt;H&lt;/sub&gt; : historical model&lt;/div&gt;&lt;div&gt;M&lt;sub&gt;S&lt;/sub&gt; : sampling model&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="300" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="W582OLzANp079AzozXXy-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=2;" edge="1" parent="1" source="W582OLzANp079AzozXXy-11" target="W582OLzANp079AzozXXy-41">
           <mxGeometry relative="1" as="geometry" />
@@ -169,9 +169,6 @@
         </mxCell>
         <mxCell id="W582OLzANp079AzozXXy-71" value="S" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="340" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="W582OLzANp079AzozXXy-72" value="S" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="210" y="100" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
